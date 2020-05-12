@@ -38,8 +38,8 @@ public class PresentationControls extends StackPane {
 
     public PresentationControls() {
         boolean darkTheme = QueleaProperties.get().getUseDarkTheme();
-        final Image PREVIOUS_IMAGE = new Image(darkTheme ? "file:icons/previous-light.png" : "file:icons/previous.png");
-        final Image NEXT_IMAGE = new Image(darkTheme ? "file:icons/next-light.png" : "file:icons/next.png");
+        final Image PREVIOUS_IMAGE = new Image(darkTheme ? "file:icons/ic-previous-light.png" : "file:icons/ic-previous.png");
+        final Image NEXT_IMAGE = new Image(darkTheme ? "file:icons/ic-next-light.png" : "file:icons/ic-next.png");
         Button previousButton = new Button("", setImageView(PREVIOUS_IMAGE));
         setButtonParams(previousButton);
         previousButton.setTranslateX(-120);

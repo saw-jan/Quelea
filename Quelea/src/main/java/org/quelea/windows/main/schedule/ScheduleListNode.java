@@ -47,7 +47,7 @@ public class ScheduleListNode extends HBox {
         super(10);
         setAlignment(Pos.CENTER_LEFT);
         ImageView icon = displayable.getPreviewIcon();
-        liveIcon = new ImageView(new Image("file:icons/recordingssettingsicon.png"));
+        liveIcon = new ImageView(new Image("file:icons/ic-livedot.png"));
         liveIcon.setFitHeight(10);
         liveIcon.setFitWidth(10);
         liveIcon.setVisible(false);
@@ -56,7 +56,7 @@ public class ScheduleListNode extends HBox {
         getChildren().add(liveIcon);
 
         if (displayable instanceof TextDisplayable || displayable instanceof TimerDisplayable) {
-            themeButton = new Button("", new ImageView(new Image("file:icons/theme.png", 16, 16, false, true)));
+            themeButton = new Button("", new ImageView(new Image("file:icons/ic-theme-small.png", 16, 16, false, true)));
             if (displayable instanceof TextDisplayable) {
                 themeButton.setOnAction(new EditThemeScheduleActionHandler((TextDisplayable) displayable));
             } else {

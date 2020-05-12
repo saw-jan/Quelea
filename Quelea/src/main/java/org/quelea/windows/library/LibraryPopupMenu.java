@@ -54,19 +54,19 @@ public class LibraryPopupMenu extends ContextMenu {
      * Create and initialise the popup menu.
      */
     public LibraryPopupMenu() {
-        addToSchedule = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.add.to.schedule.text"), new ImageView(new Image("file:icons/add.png", 16, 16, false, true)));
+        addToSchedule = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.add.to.schedule.text"), new ImageView(new Image("file:icons/ic-add.png", 16, 16, false, true)));
         addToSchedule.setOnAction(new AddSongActionHandler(true));
-        copyToSchedule = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.copy.to.schedule.text"), new ImageView(new Image("file:icons/add.png", 16, 16, false, true)));
+        copyToSchedule = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.copy.to.schedule.text"), new ImageView(new Image("file:icons/ic-copy.png", 16, 16, false, true)));
         copyToSchedule.setOnAction(new AddSongActionHandler(false));
-        preview = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.preview.song.text"), new ImageView(new Image("file:icons/prev.png", 16, 16, false, true)));
+        preview = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.preview.song.text"), new ImageView(new Image("file:icons/ic-preview.png", 16, 16, false, true)));
         preview.setOnAction(new PreviewSongActionHandler());
-        editDB = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.edit.song.text"), new ImageView(new Image("file:icons/edit.png", 16, 16, false, true)));
+        editDB = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.edit.song.text"), new ImageView(new Image("file:icons/ic-edit.png", 16, 16, false, true)));
         editDB.setOnAction(new EditSongDBActionHandler());
-        removeFromDB = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.remove.song.text"), new ImageView(new Image("file:icons/removedb.png", 16, 16, false, true)));
+        removeFromDB = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.remove.song.text"), new ImageView(new Image("file:icons/ic-delete-gray.png", 16, 16, false, true)));
         removeFromDB.setOnAction(new RemoveSongDBActionHandler());
-        exportToPDF = new MenuItem(LabelGrabber.INSTANCE.getLabel("export.pdf.button"), new ImageView(new Image("file:icons/fileexport.png", 16, 16, false, true)));
+        exportToPDF = new MenuItem(LabelGrabber.INSTANCE.getLabel("export.pdf.button"), new ImageView(new Image("file:icons/ic-pdf.png", 16, 16, false, true)));
         exportToPDF.setOnAction(new ExportPDFSongActionHandler());
-        print = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.print.song.text"), new ImageView(new Image("file:icons/fileprint.png", 16, 16, false, true)));
+        print = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.print.song.text"), new ImageView(new Image("file:icons/ic-print.png", 16, 16, false, true)));
         print.setOnAction(new EventHandler<ActionEvent>() {
 
             @Override

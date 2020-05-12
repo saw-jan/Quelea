@@ -60,13 +60,13 @@ public class SwitchBibleVersionDialog extends Stage {
         Label switchToLabel = new Label(LabelGrabber.INSTANCE.getLabel("switch.to.text") + "...");
         root.getChildren().add(switchToLabel);
         root.getChildren().add(comboBox);
-        okButton = new Button(LabelGrabber.INSTANCE.getLabel("ok.button"), new ImageView(new Image("file:icons/tick.png")));
+        okButton = new Button(LabelGrabber.INSTANCE.getLabel("ok.button"), new ImageView(new Image("file:icons/ic-tick.png")));
         okButton.setDefaultButton(true);
         okButton.setOnAction(t -> {
             selectedVersion = comboBox.getValue();
             hide();
         });
-        cancelButton = new Button(LabelGrabber.INSTANCE.getLabel("cancel.button"), new ImageView(new Image("file:icons/cross.png")));
+        cancelButton = new Button(LabelGrabber.INSTANCE.getLabel("cancel.button"), new ImageView(new Image("file:icons/ic-cancel.png")));
         cancelButton.setOnAction(t -> {
             hide();
         });

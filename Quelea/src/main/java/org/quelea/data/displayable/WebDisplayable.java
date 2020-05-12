@@ -106,7 +106,7 @@ public class WebDisplayable implements Displayable {
      */
     @Override
     public ImageView getPreviewIcon() {
-        ImageView small = new ImageView(new Image("file:icons/website.png"));
+        ImageView small = new ImageView(new Image("file:icons/ic-sch-web.png",30,30,false,true));
         return small;
     }
 

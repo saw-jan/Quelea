@@ -43,12 +43,12 @@ import org.quelea.windows.main.actionhandlers.SwitchBibleVersionActionHandler;
  */
 public class SchedulePopupMenu extends ContextMenu {
 
-    private final MenuItem editSong = new MenuItem(LabelGrabber.INSTANCE.getLabel("edit.song.text"), new ImageView(new Image("file:icons/edit.png", 16, 16, false, true)));
-    private final MenuItem editTheme = new MenuItem(LabelGrabber.INSTANCE.getLabel("edit.theme.text"), new ImageView(new Image("file:icons/edit.png", 16, 16, false, true)));
-    private final MenuItem changeBibleVersion = new MenuItem(LabelGrabber.INSTANCE.getLabel("change.bible.version.text"), new ImageView(new Image("file:icons/bible.png", 16, 16, false, true)));
-    private final MenuItem translationChoice = new MenuItem(LabelGrabber.INSTANCE.getLabel("choose.translations.text"));
+    private final MenuItem editSong = new MenuItem(LabelGrabber.INSTANCE.getLabel("edit.song.text"), new ImageView(new Image("file:icons/ic-edit.png", 16, 16, false, true)));
+    private final MenuItem editTheme = new MenuItem(LabelGrabber.INSTANCE.getLabel("edit.theme.text"), new ImageView(new Image("file:icons/ic-edit.png", 16, 16, false, true)));
+    private final MenuItem changeBibleVersion = new MenuItem(LabelGrabber.INSTANCE.getLabel("change.bible.version.text"), new ImageView(new Image("file:icons/ic-bible.png", 16, 16, false, true)));
+    private final MenuItem translationChoice = new MenuItem(LabelGrabber.INSTANCE.getLabel("choose.translations.text"), new ImageView(new Image("file:icons/ic-translate.png", 16, 16, false, true)));
     private final MenuItem editTimer = new MenuItem(LabelGrabber.INSTANCE.getLabel("edit.timer.text"), new ImageView(new Image("file:icons/timer-dark.png", 16, 16, false, true)));
-    private final MenuItem editTimerTheme = new MenuItem(LabelGrabber.INSTANCE.getLabel("edit.theme.text"), new ImageView(new Image("file:icons/theme.png", 16, 16, false, true)));
+    private final MenuItem editTimerTheme = new MenuItem(LabelGrabber.INSTANCE.getLabel("edit.theme.text"), new ImageView(new Image("file:icons/ic-theme-small.png", 16, 16, false, true)));
     
 
     public SchedulePopupMenu(Displayable item) {

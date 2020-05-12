@@ -95,7 +95,7 @@ public class AudioDisplayable implements MultimediaDisplayable, Serializable {
      */
     @Override
     public ImageView getPreviewIcon() {
-        return new ImageView(new Image("file:icons/audio30.png"));
+        return new ImageView(new Image("file:icons/ic-sch-audio.png",30,30,false,true));
     }
 
     /**

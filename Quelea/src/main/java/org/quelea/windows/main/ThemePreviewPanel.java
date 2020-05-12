@@ -105,7 +105,7 @@ public class ThemePreviewPanel extends VBox {
         songSelectButton = new RadioButton(LabelGrabber.INSTANCE.getLabel("song.default.theme.label"));
         bibleSelectButton = new RadioButton(LabelGrabber.INSTANCE.getLabel("bible.default.theme.label"));
         if (theme != ThemeDTO.DEFAULT_THEME) {
-            editButton = new Button("", new ImageView(new Image("file:icons/edit32.png", 16, 16, false, true)));
+            editButton = new Button("", new ImageView(new Image("file:icons/ic-edit.png", 16, 16, false, true)));
             editButton.setTooltip(new Tooltip(LabelGrabber.INSTANCE.getLabel("edit.theme.tooltip")));
             editButton.setOnAction(new EventHandler<javafx.event.ActionEvent>() {
                 @Override
@@ -126,7 +126,7 @@ public class ThemePreviewPanel extends VBox {
                 }
             });
 
-            removeButton = new Button("", new ImageView(new Image("file:icons/delete.png", 16, 16, false, true)));
+            removeButton = new Button("", new ImageView(new Image("file:icons/ic-delete-gray.png", 16, 16, false, true)));
             removeButton.setTooltip(new Tooltip(LabelGrabber.INSTANCE.getLabel("remove.theme.tooltip")));
             removeButton.setOnAction(new EventHandler<javafx.event.ActionEvent>() {
                 @Override

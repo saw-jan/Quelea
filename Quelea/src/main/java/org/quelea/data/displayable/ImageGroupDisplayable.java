@@ -113,10 +113,11 @@ public class ImageGroupDisplayable implements Displayable {
      */
     @Override
     public ImageView getPreviewIcon() {
-        return new ImageView(new Image("file:icons/image-group-schedule.png", 30, 30, false, true));
+        return new ImageView(new Image("file:icons/ic-sch-image.png", 30, 30, false, true));
     }
 
     /**
+     * Get the preview text to display in the schedule.
      * Get the preview text to display in the schedule.
      * <p/>
      * @return the preview text.

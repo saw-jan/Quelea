@@ -94,7 +94,7 @@ public abstract class ImportDialog extends Stage implements PropertyChangeListen
 		files = new ArrayList<>();
 		halt = false;
 		importedDialog = new SelectImportedSongsDialog();
-		importButton = new Button(LabelGrabber.INSTANCE.getLabel("import.button"), new ImageView(new Image("file:icons/import.png", 16, 16, true, false)));
+		importButton = new Button(LabelGrabber.INSTANCE.getLabel("import.button"), new ImageView(new Image("file:icons/ic-import.png", 16, 16, true, false)));
 
 		VBox mainPane = new VBox();
 		final FileChooser locationChooser = new FileChooser();
@@ -166,7 +166,7 @@ public abstract class ImportDialog extends Stage implements PropertyChangeListen
 			mainPane.getChildren().add(locationField);
 		}
 
-		closeButton = new Button(LabelGrabber.INSTANCE.getLabel("cancel.button"), new ImageView(new Image("file:icons/cross.png")));
+		closeButton = new Button(LabelGrabber.INSTANCE.getLabel("cancel.button"), new ImageView(new Image("file:icons/ic-cancel.png")));
 		closeButton.setOnAction(evt -> {
 			hide();
 		});

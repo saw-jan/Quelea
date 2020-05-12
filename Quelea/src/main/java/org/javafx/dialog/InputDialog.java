@@ -59,7 +59,7 @@ public class InputDialog extends Stage {
         textField = new TextField();
         BorderPane.setMargin(textField, new Insets(5));
         mainPane.setCenter(textField);
-        okButton = new Button(LabelGrabber.INSTANCE.getLabel("ok.button"), new ImageView(new Image("file:icons/tick.png")));
+        okButton = new Button(LabelGrabber.INSTANCE.getLabel("ok.button"), new ImageView(new Image("file:icons/ic-tick.png")));
         okButton.setDefaultButton(true);
         okButton.setOnAction(new EventHandler<ActionEvent>() {
 

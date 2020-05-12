@@ -113,7 +113,7 @@ public class TimerListPanel extends BorderPane {
         });
 
         ContextMenu removeMenu = new ContextMenu();
-        MenuItem removeItem = new MenuItem(LabelGrabber.INSTANCE.getLabel("remove.timer.text"), new ImageView(new Image("file:icons/removedb.png", 16, 16, false, false)));
+        MenuItem removeItem = new MenuItem(LabelGrabber.INSTANCE.getLabel("remove.timer.text"), new ImageView(new Image("file:icons/ic-delete-gray.png", 16, 16, false, false)));
         removeItem.setOnAction(new RemoveTimerActionHandler());
         removeMenu.getItems().add(removeItem);
         timerList.setCellFactory(DisplayableListCell.forListView(removeMenu, callback, null));

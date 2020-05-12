@@ -48,9 +48,9 @@ public class VolumeSlider extends BorderPane {
             }
         });
         
-        setLeft(new Label("",new ImageView(new Image("file:icons/volumedown.png", 16, 16, false, true))));
+        setLeft(new Label("",new ImageView(new Image("file:icons/ic-volume-down.png", 16, 16, false, true))));
         setCenter(volumeSlider);
-        setRight(new Label("",new ImageView(new Image("file:icons/volumeup.png", 16, 16, false, true))));
+        setRight(new Label("",new ImageView(new Image("file:icons/ic-volume-up.png", 16, 16, false, true))));
     }
     
     /**
