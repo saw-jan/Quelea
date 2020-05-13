@@ -54,6 +54,7 @@ import org.quelea.services.importexport.ProPresenterImportDialog;
 import org.quelea.services.importexport.ScreenMonkeyImportDialog;
 import org.quelea.services.importexport.WorshipHimImportDialog;
 import org.quelea.services.languages.LabelGrabber;
+import org.quelea.services.utils.QueleaProperties;
 import org.quelea.services.utils.Utils;
 
 /**
@@ -118,7 +119,7 @@ public class ImportMenu extends Menu {
      * Create the import menu.
      */
     public ImportMenu() {
-        super(LabelGrabber.INSTANCE.getLabel("import.heading"), new ImageView(new Image("file:icons/ic-import.png", 16, 16, false, true)));
+        super(LabelGrabber.INSTANCE.getLabel("import.heading"), new ImageView(new Image(QueleaProperties.get().getUseDarkTheme() ? "file:icons/ic-import-light.png" : "file:icons/ic-import.png", 16, 16, false, true)));
 
         qspImportDialog = new QSPImportDialog();
         openSongImportDialog = new OpenSongImportDialog();

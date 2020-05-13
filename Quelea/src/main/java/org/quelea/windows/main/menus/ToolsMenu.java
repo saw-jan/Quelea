@@ -91,7 +91,7 @@ public class ToolsMenu extends Menu {
         }
         getItems().add(liveTextItem);
 
-        optionsItem = new MenuItem(LabelGrabber.INSTANCE.getLabel("options.button"), new ImageView(new Image("file:icons/ic-options.png", 20, 20, false, true)));
+        optionsItem = new MenuItem(LabelGrabber.INSTANCE.getLabel("options.button"), new ImageView(new Image(darkTheme ? "file:icons/ic-options-light.png" : "file:icons/ic-options.png", 20, 20, false, true)));
         optionsItem.setAccelerator(new KeyCodeCombination(KeyCode.T, KeyCombination.SHORTCUT_DOWN));
         optionsItem.setOnAction(new ShowOptionsActionHandler());
 

@@ -273,7 +273,7 @@ public class BasicSongPanel extends BorderPane {
      * @return the sequence button
      */
     private Button getSequenceButton() {
-        Button ret = new Button("", new ImageView(new Image("file:icons/ic-edit.png", 20, 20, false, true)));
+        Button ret = new Button("", new ImageView(new Image(QueleaProperties.get().getUseDarkTheme() ? "file:icons/ic-edit-light.png" :"file:icons/ic-edit.png", 20, 20, false, true)));
         ret.setTooltip(new Tooltip(LabelGrabber.INSTANCE.getLabel("sequence.tooltip")));
         ret.setOnAction((event) -> {
             SequenceSelectionDialog sequenceSelectionDialog = new SequenceSelectionDialog();

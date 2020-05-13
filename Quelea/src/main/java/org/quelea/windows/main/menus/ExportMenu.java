@@ -40,6 +40,7 @@ import org.quelea.services.importexport.SelectExportedSongsDialog;
 import org.quelea.services.importexport.SongListExporter;
 import org.quelea.services.languages.LabelGrabber;
 import org.quelea.services.utils.FileFilters;
+import org.quelea.services.utils.QueleaProperties;
 import org.quelea.windows.main.QueleaApp;
 
 /**
@@ -58,7 +59,7 @@ public class ExportMenu extends Menu {
      * Create the export menu.
      */
     public ExportMenu() {
-        super(LabelGrabber.INSTANCE.getLabel("export.heading"), new ImageView(new Image("file:icons/ic-export.png", 16, 16, false, true)));
+        super(LabelGrabber.INSTANCE.getLabel("export.heading"), new ImageView(new Image(QueleaProperties.get().getUseDarkTheme() ? "file:icons/ic-export-light.png" : "file:icons/ic-export.png", 16, 16, false, true)));
 
         qspItem = new MenuItem(LabelGrabber.INSTANCE.getLabel("qsp.button"), new ImageView(new Image("file:icons/logo16.png", 16, 16, false, true)));
         qspItem.setOnAction(evt -> {
@@ -87,7 +88,7 @@ public class ExportMenu extends Menu {
 		});
         getItems().add(pdfItem);
 
-        listItem = new MenuItem(LabelGrabber.INSTANCE.getLabel("song.list"), new ImageView(new Image("file:icons/ic-list.png", 16, 16, false, true)));
+        listItem = new MenuItem(LabelGrabber.INSTANCE.getLabel("song.list"), new ImageView(new Image(QueleaProperties.get().getUseDarkTheme() ? "file:icons/ic-list-light.png" :"file:icons/ic-list.png", 16, 16, false, true)));
         listItem.setOnAction(evt -> {
 			FileChooser fc = new FileChooser();
 			fc.getExtensionFilters().add(FileFilters.CSV);

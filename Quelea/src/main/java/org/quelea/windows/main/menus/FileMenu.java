@@ -91,7 +91,7 @@ public class FileMenu extends Menu {
 
         exportToPDFItem = new MenuItem(LabelGrabber.INSTANCE.getLabel("export.schedule.pdf.button"));
         if(!Utils.isMac()) {
-            exportToPDFItem.setGraphic(new ImageView(new Image("file:icons/ic-pdf.png", 20, 20, true, false)));
+            exportToPDFItem.setGraphic(getImage("file:icons/ic-pdf.png"));
         }
         exportToPDFItem.setOnAction(new ExportPDFScheduleActionHandler());
         getItems().add(exportToPDFItem);
@@ -106,7 +106,7 @@ public class FileMenu extends Menu {
 
         exitItem = new MenuItem(LabelGrabber.INSTANCE.getLabel("exit.button"));
         if(!Utils.isMac()) {
-            exitItem.setGraphic(new ImageView(new Image("file:icons/ic-exit.png", 20, 20, true, false)));
+            exitItem.setGraphic(getImage("file:icons/ic-exit.png"));
         }
         exitItem.setOnAction(new ExitActionHandler());
         getItems().add(exitItem);

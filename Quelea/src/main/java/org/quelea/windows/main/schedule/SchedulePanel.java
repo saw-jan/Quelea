@@ -77,7 +77,7 @@ public class SchedulePanel extends BorderPane {
      */
     public SchedulePanel() {
         boolean darkTheme = QueleaProperties.get().getUseDarkTheme();
-        ImageView themeButtonIcon = new ImageView(new Image("file:icons/ic-theme.png"));
+        ImageView themeButtonIcon = new ImageView(new Image(QueleaProperties.get().getUseDarkTheme() ? "file:icons/ic-theme-light.png" : "file:icons/ic-theme.png"));
         themeButtonIcon.setFitWidth(16);
         themeButtonIcon.setFitHeight(16);
         themeButton = new Button("", themeButtonIcon);

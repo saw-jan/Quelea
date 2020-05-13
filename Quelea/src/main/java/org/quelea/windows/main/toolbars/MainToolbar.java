@@ -214,7 +214,7 @@ public class MainToolbar extends ToolBar {
         if (Utils.isMac()) {
             dvdIV = new ImageView(new Image("file:icons/ic-sch-dvd.png",24,24,false,true));
         } else {
-            dvdIV = new ImageView(new Image(QueleaProperties.get().getUseDarkTheme() ? "file:icons/ic-sch-dvd-light.png" : "file:icons/ic-sch-dvd.png", 24, 24, false, true));
+            dvdIV = new ImageView(new Image("file:icons/ic-sch-dvd.png", 24, 24, false, true));
         }
         dvdIV.setFitWidth(24);
         dvdIV.setFitHeight(24);
@@ -344,7 +344,7 @@ public class MainToolbar extends ToolBar {
     }
 
     private Button getButtonFromImage(String uri, int width, int height, boolean preserveRatio, boolean smooth) {
-        ImageView iv = new ImageView(new Image(uri, width, height, preserveRatio, smooth));
+        ImageView iv = new ImageView(new Image(QueleaProperties.get().getUseDarkTheme() ? uri.replace(".png", "-light.png") : uri, width, height, preserveRatio, smooth));
         iv.setSmooth(true);
         iv.setFitWidth(24);
         iv.setFitHeight(24);

@@ -27,6 +27,7 @@ import org.javafx.dialog.Dialog;
 import org.quelea.data.displayable.SongDisplayable;
 import org.quelea.services.languages.LabelGrabber;
 import org.quelea.services.print.Printer;
+import org.quelea.services.utils.QueleaProperties;
 import org.quelea.windows.main.QueleaApp;
 import org.quelea.windows.main.actionhandlers.AddSongActionHandler;
 import org.quelea.windows.main.actionhandlers.EditSongDBActionHandler;
@@ -58,15 +59,15 @@ public class LibraryPopupMenu extends ContextMenu {
         addToSchedule.setOnAction(new AddSongActionHandler(true));
         copyToSchedule = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.copy.to.schedule.text"), new ImageView(new Image("file:icons/ic-copy.png", 16, 16, false, true)));
         copyToSchedule.setOnAction(new AddSongActionHandler(false));
-        preview = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.preview.song.text"), new ImageView(new Image("file:icons/ic-preview.png", 16, 16, false, true)));
+        preview = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.preview.song.text"), new ImageView(new Image(QueleaProperties.get().getUseDarkTheme() ? "file:icons/ic-preview-light.png" :"file:icons/ic-preview.png", 16, 16, false, true)));
         preview.setOnAction(new PreviewSongActionHandler());
-        editDB = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.edit.song.text"), new ImageView(new Image("file:icons/ic-edit.png", 16, 16, false, true)));
+        editDB = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.edit.song.text"), new ImageView(new Image(QueleaProperties.get().getUseDarkTheme() ? "file:icons/ic-edit-light.png" :"file:icons/ic-edit.png", 16, 16, false, true)));
         editDB.setOnAction(new EditSongDBActionHandler());
         removeFromDB = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.remove.song.text"), new ImageView(new Image("file:icons/ic-delete-gray.png", 16, 16, false, true)));
         removeFromDB.setOnAction(new RemoveSongDBActionHandler());
         exportToPDF = new MenuItem(LabelGrabber.INSTANCE.getLabel("export.pdf.button"), new ImageView(new Image("file:icons/ic-pdf.png", 16, 16, false, true)));
         exportToPDF.setOnAction(new ExportPDFSongActionHandler());
-        print = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.print.song.text"), new ImageView(new Image("file:icons/ic-print.png", 16, 16, false, true)));
+        print = new MenuItem(LabelGrabber.INSTANCE.getLabel("library.print.song.text"), new ImageView(new Image(QueleaProperties.get().getUseDarkTheme() ? "file:icons/ic-print-light.png" :"file:icons/ic-print.png", 16, 16, false, true)));
         print.setOnAction(new EventHandler<ActionEvent>() {
 
             @Override
